@@ -1,0 +1,118 @@
+
+/* TRIP PLANNER PAGE */
+
+.planner-page {
+    padding: 60px 20px 90px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.planner-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planner-heading h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.15;
+    font-weight: 500;
+}
+
+.planner-heading h1 span {
+    color: #B58B4C;
+    font-style: italic;
+}
+
+.planner-heading > p:last-child {
+    color: #6B7A70;
+    margin-top: 15px;
+}
+
+.trip-form {
+    background: #FFFFFF;
+    padding: clamp(22px, 5vw, 42px);
+    border: 1px solid #E7E0D3;
+    border-radius: 8px;
+    box-shadow: 0 15px 45px rgba(24, 61, 50, 0.06);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-height: 49px;
+    padding: 12px 14px;
+    border: 1px solid #DCDDD4;
+    border-radius: 4px;
+    background: #FCFBF8;
+    color: #183D32;
+    font: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #D7AD62;
+    border-color: transparent;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-button {
+    width: 100%;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+}
+
+.form-note {
+    margin-top: 17px;
+    text-align: center;
+    color: #788278;
+    font-size: 12px;
+}
+
+.trip-result {
+    margin-top: 28px;
+    padding: 28px;
+    background: #E9EFE7;
+    border-radius: 8px;
+}
+
+.trip-result h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    margin-bottom: 12px;
+}
+
+.trip-result p {
+    margin: 8px 0;
+    color: #40584A;
+}
+
+@media (max-width: 550px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .planner-page {
+        padding-top: 40px;
+    }
+}
+
